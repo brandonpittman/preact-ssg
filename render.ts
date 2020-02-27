@@ -1,6 +1,7 @@
 const fs = require('fs')
 const h = require('vhtml')
 const html = require('htm').bind(h)
+import render from 'preact-render-to-string'
 
 const renderPage = async ({path}: {path: string}): Promise<void> => {
   let Component = await import(`./pages/${path}.ts`).then(i => i.default)

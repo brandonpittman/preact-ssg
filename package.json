@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
+    "@types/node": "^13.7.6",
     "htm": "^3.0.3",
+    "preact": "^10.3.2",
+    "preact-render-to-string": "^5.1.4",
     "vhtml": "^2.2.0"
   },
   "devDependencies": {},
-  "scripts": {},
+  "scripts": {
+    "build": "rm -rf dist && ts-node index.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brandonpittman/shtml.git"
