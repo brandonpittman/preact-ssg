@@ -25,9 +25,13 @@ const renderPage = async ({path}: {path: string}): Promise<void> => {
   `
 
   if (!fs.existsSync('dist')) fs.mkdirSync('dist')
-  if (!fs.existsSync(`dist/${path}`)) fs.mkdirSync(`dist/${path}`)
+  if (path == 'index') {
+    fs.writeFileSync(`dist/${path}.html`, result)
+  } else {
+    if (!fs.existsSync(`dist/${path}`)) fs.mkdirSync(`dist/${path}`)
+    fs.writeFileSync(`dist/${path}/index.html`, result)
+  }
 
-  fs.writeFileSync(`dist/${path}/index.html`, result)
 }
 
 export default renderPage

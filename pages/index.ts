@@ -8,7 +8,6 @@ const HomePage = ({title, message, children}) => {
     <h1>${title}</h1>
     <p>Hey, Brandon!</p>
     <p>${message}</p>
-    ${children}
   </Layout>
   `
 }
