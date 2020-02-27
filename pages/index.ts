@@ -1,7 +1,7 @@
 const h = require('vhtml')
 const html = require('htm').bind(h)
 
-const HomePage = ({children}) => {
+const HomePage = ({children}: {children: any}) => {
   return html`
   <h1>
     Home Header

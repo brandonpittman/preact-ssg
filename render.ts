@@ -23,6 +23,8 @@ const renderPage = async (
   </html>
   `
 
+  if (!fs.existsSync('dist')) fs.mkdirSync('dist')
+
   fs.writeFileSync(`dist/${path}.html`, result)
 }
 
