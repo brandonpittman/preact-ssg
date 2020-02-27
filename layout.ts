@@ -1,5 +1,4 @@
-const h = require('vhtml')
-const html = require('htm').bind(h)
+import {html} from 'htm/preact'
 
 const Layout = ({children}) => {
   return html`

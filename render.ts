@@ -1,7 +1,6 @@
 const fs = require('fs')
-const h = require('vhtml')
-const html = require('htm').bind(h)
 import render from 'preact-render-to-string'
+import {html} from 'htm/preact'
 
 const renderPage = async ({path}: {path: string}): Promise<void> => {
   let Component = await import(`./pages/${path}.ts`).then(i => i.default)
@@ -20,7 +19,7 @@ const renderPage = async ({path}: {path: string}): Promise<void> => {
   </head>
 
   <body>
-    ${renderedHTML}
+    ${render(renderedHTML)}
   </body>
   </html>
   `

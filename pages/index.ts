@@ -1,5 +1,4 @@
-const h = require('vhtml')
-const html = require('htm').bind(h)
+import {html} from 'htm/preact'
 import Layout from '../layout'
 
 const HomePage = ({title, message, children}) => {

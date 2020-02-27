@@ -1,12 +1,11 @@
-const h = require('vhtml')
-const html = require('htm').bind(h)
+import {html} from 'htm/preact'
 import Layout from '../layout'
 import Person from '../components/person'
 
 const AboutPage = ({message}) => {
   return html`
   <${Layout}>
-    <${Person} name="Brandon" age="36"></Person>
+    <${Person} name="Brandon" age="36" />
     <p class="mt-4">${message}</p>
   </Layout>
   `
