@@ -10,7 +10,7 @@ async function main () {
     }
 
     render({
-      path: path.basename(page, '.ts')
+      path: path.basename(page, '.ts'),
     })
   })
 }
