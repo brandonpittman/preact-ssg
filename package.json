@@ -1,7 +1,6 @@
 {
-  "name": "shtml",
-  "version": "1.0.0",
-  "description": "",
+  "name": "create-vhtml-app",
+  "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
     "htm": "^3.0.3",
@@ -15,11 +14,17 @@
     "type": "git",
     "url": "git+https://github.com/brandonpittman/shtml.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "static site generator",
+    "ssg",
+    "htm",
+    "vhtml"
+  ],
+  "author": "Brandon Pittman",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/brandonpittman/shtml/issues"
   },
-  "homepage": "https://github.com/brandonpittman/shtml#readme"
+  "homepage": "https://github.com/brandonpittman/shtml#readme",
+  "description": "A static site generator using htm and vhtml."
 }
